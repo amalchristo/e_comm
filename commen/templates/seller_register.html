@@ -1,0 +1,39 @@
+{% extends 'commen_master.html' %}
+{% block content %}
+{% load static %}
+<div class="container">
+    <div class="row p-5">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Sellers Register</h5>
+                  <div class="col-md-12">
+                    <label for="validationCustom01" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="validationCustom01" required>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="validationCustom02" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="validationCustom01" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="validationCustom01" required>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="validationCustom01" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="validationCustom01" required>
+                  </div><br>
+                  <div class="col-md-12 py-3">
+                    <button type="button" class="btn btn-primary w-100">Submit</button>
+                  </div>
+                  <a href="{% url 'commen:seller_login' %}" class="card-link"><h5 class="text-center">Log in</h5></a>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+
+
+{% endblock  %}
